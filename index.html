@@ -24,7 +24,6 @@
         <div class="loader"></div>
     </div>
     <!-- /Preloader -->
-
     <!-- Top Search Form Area -->
     <div class="top-search-area">
         <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -71,7 +70,8 @@
                             <div class="classynav">
                                 <ul id="nav">
                                     <li class="active"><a href="./index.html">Home</a></li>
-                                    <li><a href="#">Pages</a>
+                                    <li>
+                                        <a href="#">Pages</a>
                                         <ul class="dropdown">
                                             <li><a href="./index.html">- Home</a></li>
                                             <li><a href="./about.html">- About</a></li>
@@ -79,7 +79,8 @@
                                             <li><a href="./blog.html">- Blog</a></li>
                                             <li><a href="./single-blog.html">- Blog Details</a></li>
                                             <li><a href="./contact.html">- Contact</a></li>
-                                            <li><a href="#">- Dropdown</a>
+                                            <li>
+                                                <a href="#">- Dropdown</a>
                                                 <ul class="dropdown">
                                                     <li><a href="#">- Dropdown Item</a></li>
                                                     <li><a href="#">- Dropdown Item</a></li>
@@ -106,7 +107,6 @@
         </div>
     </header>
     <!-- Header Area End -->
-
     <!-- Welcome Area Start -->
     <section class="welcome-area">
         <div class="welcome-slides owl-carousel">
@@ -150,7 +150,6 @@
         </div>
     </section>
     <!-- Welcome Area End -->
-
     <!-- Gallery Area Start -->
     <div class="alime-portfolio-area section-padding-80 clearfix">
         <div class="container-fluid">
@@ -289,7 +288,36 @@
         </div>
     </div>
     <!-- Gallery Area End -->
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
 
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "107329509123597");
+        chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v17.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
     <!-- Follow Area Start -->
     <section class="follow-area clearfix">
         <div class="container">
@@ -368,7 +396,6 @@
         </div>
     </section>
     <!-- Follow Area End -->
-
     <!-- Footer Area Start -->
     <footer class="footer-area">
         <div class="container">
@@ -377,9 +404,12 @@
                     <div class="footer-content d-flex align-items-center justify-content-between">
                         <!-- Copywrite Text -->
                         <div class="copywrite-text">
-                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                            <p>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy;
+                                <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </p>
                         </div>
                         <!-- Footer Logo -->
                         <div class="footer-logo">
@@ -398,7 +428,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         </div>
     </footer>
     <!-- Footer Area End -->
-
     <!-- **** All JS Files ***** -->
     <!-- jQuery 2.2.4 -->
     <script src="js/jquery.min.js"></script>
